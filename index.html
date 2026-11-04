@@ -747,13 +747,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offse
         <div class="cl-text"><span>Location</span><p>Hyderabad, Telangana, India</p></div>
       </div>
     </div>
-    <form class="contact-form" action="https://formsubmit.co/koushikgoudnagula@gmail.com" method="POST">
-      <!-- Formsubmit.co config -->
-      <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-      <input type="hidden" name="_captcha" value="true">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none">
-      <input type="hidden" name="_next" value="https://koushik-portfolio-indol.vercel.app/#contact">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="f4cf6cf6-44c6-4996-a4a7-6c3d02040752">
+      <input type="hidden" name="subject" value="New Portfolio Contact Message">
+      <input type="hidden" name="redirect" value="https://koushik-portfolio-indol.vercel.app/#contact">
+      <input type="checkbox" name="botcheck" style="display:none">
       <div class="form-group">
         <label class="form-label" for="cfName">Name</label>
         <input type="text" name="name" id="cfName" class="form-input" placeholder="Your name" required/>
